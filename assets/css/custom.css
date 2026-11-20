@@ -7,16 +7,163 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif;
   font-weight: 700;
-  color: #e3c137;
+  color: #ff6f00;
 }
 
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.6rem; }
 h4 { font-size: 1.3rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
 
 p {
   font-size: 1.05rem;
   line-height: 1.8;
   color: #e8e0f8;
+}
+
+/* Step 3 */
+
+a {
+  color: #ffb703;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+button,
+.contact .php-email-form button[type=submit] {
+  background: #ffb703;
+  color: #000000;
+  border: 2px solid #ffb703;
+  border-radius: 0;
+  padding: 12px 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+button:hover,
+.contact .php-email-form button[type=submit]:hover {
+  background: transparent;
+  color: #ffb703;
+}
+
+button:active,
+.contact .php-email-form button[type=submit]:active {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
+
+/* Step 4 */
+.about,
+.resume,
+.portfolio {
+  padding: 90px 0;
+}
+
+.about .content ul li {
+  margin-bottom: 30px;
+}
+
+.resume .resume-item {
+  padding: 0 0 35px 30px;
+}
+
+.portfolio .portfolio-filters {
+  margin: 0 0 40px;
+}
+
+.portfolio .portfolio-item {
+  padding: 10px;
+}
+
+/* Content blocks: borders, radius, shadows */
+.about .content {
+  padding: 30px;
+  border: 2px solid #ffb703;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 183, 3, 0.3);
+}
+
+.resume .resume-item {
+  border-left: 4px solid #ffb703;
+}
+
+.portfolio .portfolio-content {
+  border: 2px solid #ffb703;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 183, 3, 0.3);
+}
+
+/* Step 5 */
+.scroll-top {
+  background-color: #ffb703;
+  border-radius: 8px;
+  width: 60px;
+  height: 40px;
+}
+
+.scroll-top i {
+  color: #000000;
+}
+
+/* Navigation bar */
+.header {
+  background-color: rgba(26, 26, 26, 0.95);
+  border-bottom: 2px solid #ffb703;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+}
+
+/* Complementary task */
+.services ul {
+  list-style: none;
+}
+
+.services ul li::before {
+  content: "> ";
+  color: #ffb703;
+}
+
+.services ul ul li::before {
+  content: "- ";
+  color: #cccccc;
+}
+
+/* Ordered list: custom numbers with a counter */
+.services ol {
+  list-style: none;
+  counter-reset: stage;
+}
+
+.services ol li {
+  counter-increment: stage;
+}
+
+.services ol li::before {
+  content: counter(stage) ". ";
+  color: #ffb703;
+  font-weight: 700;
+}
+
+.services table th,
+.services table td {
+  padding: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.services table thead th {
+  background-color: #ffb703;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services table tbody tr:hover td {
+  background-color: #333333;
+  color: #ffb703;
 }
